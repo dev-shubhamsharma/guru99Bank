@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Heebo',sans-serif;
+    font-size: 18px;
+}
+
+/*  header */
+
+header {
+    font-family: 'Bebas Neue', cursive;
+    color: #fff;
+    background: red;
+    letter-spacing: 0.5px;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 40px;
+    text-transform: uppercase;
+}
+
+/* main content on website */
+
+main {
+    padding: 30px 20px;
+    color: #333333;
+    display: grid;
+    place-items: center;
+}
+
+.section_subheading {
+    font-size: 15px;
+    color: #777;
+    text-transform: lowercase;
+}
+
+section form {
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 40px 0 20px 0;
+    padding: 20px;
+    max-width: 100%;
+    /* min-width: 400px; */
+}
+
+.input_group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 12px 0;
+}
+
+.text_box {
+    width: 100%;
+    font-size: 15px;
+    padding: 4px 8px;
+    margin: 4px 0;
+}
+
+.btn{
+    width: 100%;
+    font-size: 15px;
+    padding: 8px 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+
+#submit_btn {
+    background-color: red;
+    color: #fff;
+    margin-top: 20px;
+}
+
+#reset_btn {
+    margin-top: 15px;
+    background: #aaa;
+}
+
+
+
+/* footer */
+
+footer {
+    background: #333333;
+    height: 60px;
+    color: #fff;
+    line-height: 60px;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+@media (min-width: 450px) {
+
+    section form {
+        min-width: 400px;
+    }
+
+}
