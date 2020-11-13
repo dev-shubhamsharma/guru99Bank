@@ -18,10 +18,98 @@ header {
     background: red;
     letter-spacing: 0.5px;
     height: 60px;
-    line-height: 60px;
+    /* line-height: 60px; */
     padding: 0 40px;
     text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
+
+header .menu-btn {
+    width: 35px;
+    height: 35px; 
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.menu-btn .line {
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    display: block;
+    border-radius: 3px;
+    transition: transform 200ms ease-in;
+}
+
+#menu-check {
+    display: none;
+}
+
+#menu-check:checked ~ label .menu-btn >.top{
+    transform: rotate(45deg) translateY(9px);
+}
+
+#menu-check:checked ~ label .menu-btn >.bottom {
+    transform: rotate(315deg) translateY(-9px);
+}
+
+/* navigation */
+
+nav {
+    width: 100%;
+    max-width: 100vw;
+    background: #333333;
+    height: auto;
+    padding:30px;
+    position: absolute;
+    top: 60px;
+    left: -100vw;
+    transition: left 0.3s ease-in-out;
+    /* border: 1px solid red; */
+    /* overflow-y: scroll; */
+    /* z-index: -1; */
+    /* overflow: scroll; */
+}
+
+/* open navigation */
+
+nav.active {
+    left: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul li {
+    /* border: 1px solid grey; */
+    border-bottom: 1px solid #444444;
+    font-size: 16px;
+    padding: 8px 0;
+}
+
+nav ul li:last-child {
+    border-bottom: none;
+}
+
+.nav-links span {
+    margin-right: 10px;
+}
+.nav-links {
+    color: #cccccc;
+    transition: color 0.2s ease-in-out;
+}
+.nav-links:hover {
+    color: red;
+}
+
 
 /* main content on website */
 
@@ -95,8 +183,29 @@ footer {
     font-size: 15px;
 }
 
+
+/* prevents form resize */
 @media(min-width: 550px) {
+
     section form {
         max-width: 500px;
     }
+
+}
+
+/* to control the nav in left side of window */
+@media(min-width: 650px) {
+    nav {
+        position: relative;
+        top: 0;
+        left: 0;
+        /* z-index: 0; */
+        float: left;
+        max-width: 250px;
+    }
+
+    #menu-btn {
+        display: none;
+    }
+
 }
