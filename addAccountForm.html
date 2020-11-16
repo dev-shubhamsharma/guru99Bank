@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Account | Guru99 Bank</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Heebo&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="title">Guru99 Bank</h1>
+        <!-- menu buttons elements -->
+        <input type="checkbox" name="menu-check" id="menu-check">
+        <label for="menu-check">
+            <div class="menu-btn" id="menu-btn" onclick="toggleMenu()">
+                <span class="top line"></span>
+                <span class="bottom line"></span>
+            </div>
+        </label>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li>
+                <a href="#" class="nav-links"><span class="fa fa-home"></span>Home</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links"><span class="fa fa-user-circle"></span>New Customer</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links"><span class="fa fa-edit"></span>Edit Customer</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links"><span class="fa fa-trash"></span>Delete Customer</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links"><span class="fa fa-user"></span>New Account</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links"><span class="fa fa-pencil"></span>Edit Account</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links"><span class="fa fa-trash-o"></span>Delete Account</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links"><span class="fa fa-money"></span>Deposit</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links"><span class="fa fa-credit-card"></span>Withdrawal</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links"><span class="fa fa-rocket"></span>Fund transfer</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links"><span class="fa fa-rupee"></span>Balance enquiry</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links"><span class="fa fa-history"></span>Mini statement</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links"><span class="fa fa-filter"></span>Customized statement</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links"><span class="fa fa-key"></span>Change password</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links"><span class="fa fa-sign-out"></span>Logout</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h1 class="section_heading">Add New Account Form</h1>
+            <p class="section_subheading">Fill all details and submit</p>
+            <form action="#" method="post">
+                <div class="input_group">
+                    <label for="customerid">Customer Id : </label>
+                    <input type="text" name="customerid" id="customerid" class="text_box" required>
+                </div>
+                <div class="input_group">
+                    <label for="accounttype">Account Type : </label>
+                    <select name="accounttype" id="accounttype" class="text_box" required>
+                        <option value="" selected="selected">Select Account Type</option>
+                        <option value="Savings">Savings</option>
+                        <option value="Current">Current</option>
+                    </select>
+                </div>
+                <div class="input_group">
+                    <label for="initialdeposit">Initial Deposit : </label>
+                    <input type="number" name="initialdeposit" id="initialdeposit" class="text_box" required>
+                </div>
+
+                <!-- submit button -->
+                <div class="input_group">
+                    <input type="submit" value="Submit" class="btn" id="submit_btn">
+                </div>
+                <div class="input_group">
+                    <input type="reset" class="btn" id="reset_btn">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright&copy;Guru99Bank-2020</p>
+    </footer>
+
+    <!-- java script files link -->
+    <script src="main.js"></script>
+</body>
+</html>
